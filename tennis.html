@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3e8e41;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: white;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #3e8e41;
+        }
+        .emoji {
+            font-size: 1.2em;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu .home {
+            border: none;
+            padding: 20px;
+            position: fixed;
+            top: 0px;
+            left: 20px;
+        }
+
+        .menu .home img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; 
+            transition: transform 0.3s;
+        }
+        .menu .home img:hover {
+            transform: scale(1.1); 
+        }
+
+        .menu .home img:active {
+            transform: scale(0.9);
+        }
+        footer {
+            background-color: #3e8e41;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tennis</h1>
+    </header>
+    
+    <main>
+        <section>
+            <p>Tennis (quần vợt) là môn thể thao đối kháng, trong đó hai hoặc bốn người chơi dùng vợt đánh bóng qua lưới với mục tiêu ghi điểm bằng cách làm bóng chạm sân đối phương mà họ không đỡ được. Đây là một trong những môn thể thao phổ biến và hấp dẫn nhất thế giới.</p>
+
+            <hr>
+
+            <h2 class="section-title">1. Luật chơi cơ bản</h2>
+            <ul>
+                <li>• <strong>Số người:</strong> Thi đấu đơn (1 vs 1) hoặc đôi (2 vs 2).</li>
+                <li>• <strong>Sân thi đấu:</strong> Kích thước 23,77m x 8,23m (đánh đơn) hoặc 10,97m (đánh đôi), có lưới ở giữa.</li>
+                <li>• <strong>Cách tính điểm:</strong>
+                    <ul>
+                        <li>o Mỗi game có điểm số: 0 → 15 → 30 → 40 → thắng game (nếu hơn 2 điểm).</li>
+                        <li>o Mỗi set: Ai thắng 6 game trước và cách biệt 2 game sẽ thắng set.</li>
+                        <li>o Trận đấu: Best of 3 (thắng 2 set) hoặc Best of 5 (thắng 3 set, thường áp dụng cho nam ở các giải Grand Slam).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <hr>
+
+            <h2 class="section-title">2. Các mặt sân chính</h2>
+            <ul>
+                <li>🎾 <strong>Sân cứng</strong> – Tốc độ trung bình, bóng nảy đều (US Open, Australian Open).</li>
+                <li>🎾 <strong>Sân đất nện</strong> – Chậm, bóng nảy cao, lợi thế cho tay vợt phòng thủ (Roland Garros).</li>
+                <li>🎾 <strong>Sân cỏ</strong> – Nhanh, bóng nảy thấp, phù hợp với lối chơi giao bóng - lên lưới (Wimbledon).</li>
+            </ul>
+
+            <hr>
+
+            <h2 class="section-title">3. Những giải đấu lớn</h2>
+            <ul>
+                <li>🏆 4 Grand Slam: Australian Open, Roland Garros, Wimbledon, US Open.</li>
+                <li>🏆 ATP & WTA Tour: Hệ thống giải đấu chuyên nghiệp cho nam & nữ.</li>
+                <li>🏆 Olympic Tennis: Chính thức trở lại từ năm 1988.</li>
+            </ul>
+
+            <hr>
+
+            <h2 class="section-title">4. Những huyền thoại của Tennis</h2>
+            <ul>
+                <li>🏅 <strong>Roger Federer</strong> (Thụy Sĩ) – 20 Grand Slam, lối chơi đẹp mắt.</li>
+                <li>🏅 <strong>Rafael Nadal</strong> (Tây Ban Nha) – "Vua đất nện", 22 Grand Slam.</li>
+                <li>🏅 <strong>Novak Djokovic</strong> (Serbia) – Tay vợt số 1 thế giới lâu nhất, 24 Grand Slam.</li>
+                <li>🏅 <strong>Serena Williams</strong> (Mỹ) – Nữ hoàng quần vợt, 23 Grand Slam.</li>
+            </ul>
+
+            <hr>
+
+            <h2 class="section-title">5. Điểm hấp dẫn của Tennis</h2>
+            <ul>
+                <li>✅ Tốc độ & sức mạnh – Những pha bóng chớp nhoáng, giao bóng có thể đạt hơn 230 km/h.</li>
+                <li>✅ Chiến thuật đa dạng – Lối chơi tấn công, phòng thủ, giao bóng lên lưới…</li>
+                <li>✅ Sự bền bỉ – Các trận đấu căng thẳng có thể kéo dài hơn 5 giờ.</li>
+            </ul>
+
+            <p>Tennis không chỉ là môn thể thao đỉnh cao mà còn là sự kết hợp giữa thể lực, kỹ thuật và tinh thần chiến đấu! 🎾🔥</p>
+
+            <hr>
+
+            <h2 class="section-title">Tennis tại Olympic 🎾🏆</h2>
+            <p>Tennis là môn thể thao chính thức của Olympic từ năm 1896, nhưng bị loại bỏ vào năm 1924 và chỉ trở lại từ 1988. Đây là một trong những nội dung hấp dẫn nhất Thế vận hội, quy tụ những tay vợt hàng đầu thế giới.</p>
+
+            <hr>
+
+            <h2 class="section-title">1. Thể thức thi đấu</h2>
+            <ul>
+                <li>• 5 nội dung:
+                    <ul>
+                        <li>o Đơn nam</li>
+                        <li>o Đơn nữ</li>
+                        <li>o Đôi nam</li>
+                        <li>o Đôi nữ</li>
+                        <li>o Đôi nam nữ (bổ sung từ 2012)</li>
+                    </ul>
+                </li>
+                <li>• Thể thức:
+                    <ul>
+                        <li>o Loại trực tiếp từ vòng đầu đến chung kết.</li>
+                        <li>o Best of 3 sets, riêng chung kết đơn nam trước đây là best of 5 (từ 2016 đổi thành 3 set).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <hr>
+
+            <h2 class="section-title">2. Những tay vợt huyền thoại tại Olympic</h2>
+            <ul>
+                <li>🏅 <strong>Steffi Graf</strong> (Đức) – HCV 1988, hoàn tất "Golden Slam" (4 Grand Slam + HCV Olympic trong cùng năm).</li>
+                <li>🏅 <strong>Rafael Nadal</strong> (Tây Ban Nha) – HCV đơn nam 2008, HCV đôi nam 2016.</li>
+                <li>🏅 <strong>Serena & Venus Williams</strong> (Mỹ) – Venus: 4 HCV, Serena: 4 HCV (đơn + đôi).</li>
+                <li>🏅 <strong>Andy Murray</strong> (Anh) – VĐV duy nhất bảo vệ thành công HCV đơn nam (2012, 2016).</li>
+            </ul>
+
+            <hr>
+
+            <h2 class="section-title">3. Điểm đặc biệt của tennis Olympic</h2>
+            <ul>
+                <li>✅ Không có điểm thưởng ATP/WTA, nhưng danh hiệu HCV Olympic có ý nghĩa lịch sử.</li>
+                <li>✅ Thi đấu theo quốc gia, mang lại cảm xúc đặc biệt so với các giải Grand Slam.</li>
+                <li>✅ Sử dụng mặt sân khác nhau – Tùy theo nước chủ nhà (cỏ, cứng, đất nện).</li>
+            </ul>
+
+            <p>Tennis Olympic không chỉ là sân chơi của các huyền thoại mà còn là nơi tạo ra những khoảnh khắc đáng nhớ!</p>
+
+            <hr>
+
+            <h2 class="section-title">Những vận động viên tennis vĩ đại nhất tại Olympic 🎾🏆</h2>
+            <ul>
+                <li>1. <strong>Steffi Graf</strong> (Đức) – "Nữ hoàng Golden Slam" 🏆
+                    <ul>
+                        <li>• HCV Olympic: 🥇 Đơn nữ 1988</li>
+                        <li>• Điểm nổi bật:
+                            <ul>
+                                <li>✅ Tay vợt duy nhất trong lịch sử hoàn tất "Golden Slam" (vô địch cả 4 Grand Slam + HCV Olympic trong cùng năm 1988).</li>
+                                <li>✅ Áp đảo mọi đối thủ tại Olympic Seoul 1988, không thua set nào.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>2. <strong>Rafael Nadal</strong> (Tây Ban Nha) – "Chiến binh bất bại" 🏆🏆
+                    <ul>
+                        <li>• HCV Olympic: 🥇 Đơn nam 2008, 🥇 Đôi nam 2016</li>
+                        <li>• Điểm nổi bật:
+                            <ul>
+                                <li>✅ Tay vợt nam duy nhất giành HCV ở cả đơn và đôi.</li>
+                                <li>✅ Đánh bại Novak Djokovic ở bán kết và Fernando González ở chung kết 2008.</li>
+                                <li>✅ Vô địch đôi nam Olympic Rio 2016 cùng Marc López.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>3. <strong>Serena Williams</strong> (Mỹ) – "Nữ hoàng Grand Slam & Olympic" 🏆🏆🏆🏆
+                    <ul>
+                        <li>• HCV Olympic: 🥇 Đơn nữ 2012, 🥇🥇🥇 Đôi nữ 2000, 2008, 2012</li>
+                        <li>• Điểm nổi bật:
+                            <ul>
+                                <li>✅ Giành tổng cộng 4 HCV, nhiều nhất lịch sử tennis nữ.</li>
+                                <li>✅ Là tay vợt nữ duy nhất hoàn tất "Golden Slam" cả ở đơn và đôi.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>4. <strong>Venus Williams</strong> (Mỹ) – "Nữ VĐV Olympic vĩ đại nhất" 🏆🏆🏆🏆🥈
+                    <ul>
+                        <li>• HCV Olympic: 🥇 Đơn nữ 2000, 🥇🥇🥇 Đôi nữ 2000, 2008, 2012</li>
+                        <li>• HCB Olympic: 🥈 Đôi nam nữ 2016</li>
+                        <li>• Điểm nổi bật:
+                            <ul>
+                                <li>✅ VĐV tennis giành nhiều huy chương nhất Olympic (5 huy chương).</li>
+                                <li>✅ Nữ tay vợt đầu tiên trong kỷ nguyên Mở vô địch cả đơn & đôi tại một kỳ Olympic (2000).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h3>&copy; Nguyễn Bảo Phong - Chuyên gia phân tích thể thao.</h3>
+    </footer>
+
+    <div class="menu">
+        <div class="home" onclick="navigateTo('Trang chủ.html')"><a href="index.html">
+            <img src="logo.jpg" alt="Trang chủ">
+        </div>
+    </div>
+</body>
+</html>
