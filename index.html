@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg');
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .logo img {
+            width: 50px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        #box-submenu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .submenu-container {
+            position: relative;
+        }
+        #box-submenu {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: visibility 0s 0.3s, opacity 0.3s ease;
+        }
+
+        #box-submenu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #box-submenu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            padding: 5px 10px;
+        }
+
+        #box-submenu ul li a:hover {
+            background-color: aqua;
+            border-radius: 3px;
+        }
+
+
+        .submenu-container:hover #box-submenu {
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0s;
+        }
+
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .no:hover{
+            background-color: aqua;
+            border-radius: 3px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu .home {
+            border: none;
+            padding: 0;
+            position: fixed;
+            top: 0px;
+            left: 20px;
+        }
+
+        .menu .home img {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%; 
+            transition: transform 0.3s;
+        }
+        .menu .home img:hover {
+            transform: scale(1.1); 
+        }
+
+        .menu .home img:active {
+            transform: scale(0.9);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+        .footer-bottom h3 {
+            margin: 0;
+        }   
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="home" onclick="navigateTo('Trang chủ.html')"><a href="trang chủ.html">
+                <img src="logo.jpg" alt="Trang chủ">
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="trang chủ.html">Giới thiệu</a>
+            <div class="submenu-container">
+                <a class="no" href="#">Các môn thể thao</a>
+                <div id="box-submenu">
+                    <ul>
+                        <li><a href="bongda.html">Bóng đá</a></li>
+                        <li><a href="bongro.html">Bóng rổ</a></li>
+                        <li><a href="bongban.html">Bóng bàn</a></li>
+                        <li><a href="bongchuyen.html">Bóng chuyền</a></li>
+                        <li><a href="covua.html">Cờ vua</a></li>
+                        <li><a href="cotuong.html">Cờ tướng</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="boi.html">Bơi</a></li>
+                        <li><a href="dienkinh.html">Điền kinh</a></li>
+                        <li><a href="caulong.html">Cầu lông</a></li>
+                        <li><a href="covay.html">Cờ vây</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="tin tức.html">Tin tức</a>
+        </nav>
+    </header>    
+    <div class="container">
+        <div class="section" id="thethao-vietnam">
+            <h2>Thể thao Việt Nam</h2>
+            <p>Thể thao Việt Nam có một lịch sử dài với nhiều thành tích đáng tự hào. Các môn thể thao phổ biến như bóng đá, bóng chuyền, cầu lông, và võ thuật luôn được người dân yêu thích và cổ vũ. Đặc biệt, bóng đá Việt Nam đã có sự phát triển mạnh mẽ trong những năm gần đây với những chiến thắng nổi bật tại các giải đấu khu vực và quốc tế.</p>
+            <p>Nhiều vận động viên Việt Nam đã vươn tầm thế giới trong các môn thể thao như cử tạ, bơi lội và điền kinh. Ngoài ra, thể thao điện tử (esports) cũng đang trở thành một xu hướng phát triển mạnh mẽ ở Việt Nam.</p>
+        </div>
+        <div class="section" id="thethao-thegioi">
+            <h2>Thể thao Thế giới</h2>
+            <p>Thế giới có vô vàn môn thể thao nổi tiếng và các sự kiện thể thao được tổ chức hàng năm thu hút hàng triệu người hâm mộ. Các giải đấu lớn như FIFA World Cup, Thế vận hội Olympic, và giải vô địch tennis Grand Slam là những sự kiện thể thao được mong chờ nhất trên toàn cầu.</p>
+            <p>Thể thao không chỉ là một phương tiện giải trí mà còn là cầu nối gắn kết các quốc gia, giúp tăng cường sự hiểu biết văn hóa và tôn vinh tinh thần thể thao. Các vận động viên nổi tiếng như Cristiano Ronaldo, Serena Williams, Michael Jordan, và Usain Bolt đã trở thành biểu tượng toàn cầu và truyền cảm hứng cho hàng triệu người.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <h3>&copy; Nguyễn Bảo Phong - Chuyên gia phân tích thể thao.</h3>
+        </div>
+    </footer>
+    
+</body>
+</html>
